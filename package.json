@@ -1,0 +1,45 @@
+{
+  "name": "BravoCryptoCoin",
+  "version": "1.0.0",
+  "description": "BBCC - A gold-backed ERC-20 token on Flare Network with phased distribution and integrated assets",
+  "license": "MIT",
+  "author": "BravoBryan1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BravoBryan1/BravoCryptoCoin.git"
+  },
+  "main": "contracts/BravoCryptoCoin.sol",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:songbird": "hardhat run scripts/deploy.js --network songbird",
+    "deploy:flare": "hardhat run scripts/deploy.js --network flare",
+    "phase1:release": "hardhat run scripts/phase1-release.js --network flare",
+    "phase2:release": "hardhat run scripts/phase2-release.js --network flare",
+    "phase3:unlock": "hardhat run scripts/phase3-unlock.js --network flare"
+  },
+  "keywords": [
+    "blockchain",
+    "cryptocurrency",
+    "token",
+    "ERC-20",
+    "Flare",
+    "Songbird",
+    "gold-backed",
+    "smart-contract",
+    "web3",
+    "DeFi",
+    "staking",
+    "farming"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@thirdweb-dev/sdk": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.16.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
